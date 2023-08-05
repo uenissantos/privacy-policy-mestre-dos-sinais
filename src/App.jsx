@@ -29,7 +29,6 @@ function App() {
                   <p> 2ª  insira o mesmo email cadastrado na casa de aposta </p>
 
  <div className='form'>
-			<form >
 				<input
 					type="email"
 					placeholder="E-mail"
@@ -49,11 +48,11 @@ function App() {
  email&&
 
 		// eslint-disable-next-line react/jsx-no-target-blank
-		<button className='button' type="button">   <a    target='_blank' href={`https://app.betserver.site/MESTREDOSSINAIS/create-free-user/`}> Cadastrar</a></button>
+		<button className='button' >   <a    target='_blank' href={`https://app.betserver.site/MESTREDOSSINAIS/create-free-user/`}> Cadastrar</a></button>
 }
 
 
- 	</form>
+
 
 
 
