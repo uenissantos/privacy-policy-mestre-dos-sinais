@@ -8,12 +8,6 @@ function App() {
 
 	const [email, setEmail] = useState("");
 
-	function handleSubmit(e) {
-		e.preventDefault();
-	window.location.href = `https://app.betserver.site/MESTREDOSSINAIS/create-free-user/${email}`;
-	}
-
-
 
 	const  redrectRegister = ()=>{
 		window.location.href = `https://go.aff.7k-partners.com/akuxiqxp`;
@@ -21,13 +15,6 @@ function App() {
 	}
 
 
-const redrectPrivacyPolicy=()=>{
-
-	window.location.href = `https://doc-hosting.flycricket.io/mestre-dos-sinais-privacy-policy/35066c0c-6b12-4137-91d9-bd6f710fc73b/privacy`;
-
-
-
-}
 
 	return (
 		<Styled.Styleshet >
@@ -42,7 +29,7 @@ const redrectPrivacyPolicy=()=>{
                   <p> 2ª  insira o mesmo email cadastrado na casa de aposta </p>
 
  <div className='form'>
-			<form onSubmit={handleSubmit}>
+			<form >
 				<input
 					type="email"
 					placeholder="E-mail"
@@ -50,7 +37,7 @@ const redrectPrivacyPolicy=()=>{
 					onChange={(e) => setEmail(e.target.value)}
 				/>
 <p className='senha'> senha para usuario free : 12345678</p>
-         <button  type='button'  onClick ={redrectPrivacyPolicy} className='termos'> POLITICA DE PRIVACIDADE  </button>
+        <a  target='_blank' href="https://doc-hosting.flycricket.io/mestre-dos-sinais-privacy-policy/35066c0c-6b12-4137-91d9-bd6f710fc73b/privacy" rel="noreferrer">POLITICA DE PRIVACIDADE</a>
 
    {   email&& <p>Ao clicar em cadastrar você concordar com nossos termos.
 </p>}
@@ -61,7 +48,7 @@ const redrectPrivacyPolicy=()=>{
 
  email&&
 
-		<button className='button' type="submit">Cadastrar</button>
+		<button className='button' type="button">   <a    target='blank' href={`https://app.betserver.site/MESTREDOSSINAIS/create-free-user/${email}`}> Cadastrar</a></button>
 }
 
 
