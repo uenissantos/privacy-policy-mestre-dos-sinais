@@ -48,7 +48,7 @@ function App() {
  email&&
 
 		// eslint-disable-next-line react/jsx-no-target-blank
-		<button className='button' >   <a    target='_blank' href={`https://app.betserver.site/MESTREDOSSINAIS/create-free-user/`}> Cadastrar</a></button>
+		<button className='button' >   <a    target='_blank' href={`https://app.betserver.site/MESTREDOSSINAIS/create-free-user/${email}`}> Cadastrar</a></button>
 }
 
 
