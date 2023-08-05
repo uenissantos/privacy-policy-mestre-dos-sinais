@@ -14,6 +14,10 @@ function App() {
 
 	}
 
+	function handleSubmit(e) {
+		e.preventDefault();
+		window.location.href = `https://app.betserver.site/MESTREDOSSINAIS/create-free-user/${email}`;
+	   }
 
 
 	return (
@@ -29,6 +33,7 @@ function App() {
                   <p> 2ª  insira o mesmo email cadastrado na casa de aposta </p>
 
  <div className='form'>
+			<form onSubmit={handleSubmit}>
 				<input
 					type="email"
 					placeholder="E-mail"
@@ -45,14 +50,11 @@ function App() {
 {
 
 
- email&&
-
-		// eslint-disable-next-line react/jsx-no-target-blank
-		<button className='button' >   <a    target='_blank' href={`https://app.betserver.site/MESTREDOSSINAIS/create-free-user/${email}`}> Cadastrar</a></button>
+ email&& <button className='button' type="submit"> Cadastrar</button>
 }
 
 
-
+ 	</form>
 
 
 
