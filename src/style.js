@@ -45,7 +45,10 @@ input {
 background-color: rgb(40, 40, 52);
 }
 
+a{
 
+	color: red;
+}
 
 .termos{
 color: white;
