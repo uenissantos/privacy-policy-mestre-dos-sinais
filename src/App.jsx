@@ -41,7 +41,8 @@ function App() {
 					onChange={(e) => setEmail(e.target.value)}
 				/>
 <p className='senha'> senha para usuario free : 12345678</p>
-        <a  target='_blank' href="https://doc-hosting.flycricket.io/mestre-dos-sinais-privacy-policy/35066c0c-6b12-4137-91d9-bd6f710fc73b/privacy" rel="noreferrer">POLITICA DE PRIVACIDADE</a>
+
+        <a className='termos' target='_blank' href="https://doc-hosting.flycricket.io/mestre-dos-sinais-privacy-policy/35066c0c-6b12-4137-91d9-bd6f710fc73b/privacy" rel="noreferrer">POLITICA DE PRIVACIDADE</a>
 
    {   email&& <p>Ao clicar em cadastrar você concordar com nossos termos.
 </p>}

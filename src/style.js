@@ -45,23 +45,14 @@ input {
 background-color: rgb(40, 40, 52);
 }
 
-a{
 
-	color: red;
-}
 
 .termos{
 color: white;
 
-background-color:  rgb(97, 53, 131);
 
 }
 
-.senha{
-
-color: red;
-
-}
 
 `}
 `;
